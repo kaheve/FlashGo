@@ -33,3 +33,4 @@ stateDiagram
   FinalizarCorrida --> Usuario
   Usuario --> AvaliaoDaCorrida
 
+
