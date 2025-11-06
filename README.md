@@ -1,4 +1,5 @@
-stateDiagram-v2
+```mermaid
+  stateDiagram-v2
   direction LR
 
   [*] --> FazerLogin
