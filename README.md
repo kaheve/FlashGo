@@ -1,4 +1,5 @@
 # FlashGo
+```mermaid 
 ---
 config:
   layout: elk
