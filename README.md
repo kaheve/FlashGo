@@ -1,8 +1,4 @@
 ```mermaid
----
-config:
-  layout: elk
----
 stateDiagram
   direction LR
   [*] --> Fazerlogin
