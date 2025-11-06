@@ -1,9 +1,5 @@
 ```mermaid
 flowchart TD
----
-config:
-  layout: elk
----
 stateDiagram
   direction LR
   [*] --> Fazerlogin
@@ -36,3 +32,4 @@ stateDiagram
   CorridaEmAndamento --> FinalizarCorrida
   FinalizarCorrida --> Usuario
   Usuario --> AvaliaoDaCorrida
+
