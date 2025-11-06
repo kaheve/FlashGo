@@ -1,33 +1,42 @@
-```mermaid
-stateDiagram
+stateDiagram-v2
   direction LR
-  [*] --> Fazerlogin
-  [*] --> Criarconta
-  Criarconta --> Usuario
-  Criarconta --> Motorista
-  Fazerlogin --> Conta
+
+  [*] --> FazerLogin
+  [*] --> CriarConta
+
+  CriarConta --> Usuario
+  CriarConta --> Motorista
+
+  FazerLogin --> Conta
   Conta --> Usuario
   Conta --> Motorista
-  Motorista --> IniciarServiço
-  Usuario --> SolicitarServiço
-  SolicitarServiço --> Pagamento
+
+  Motorista --> IniciarServico
+  Usuario --> SolicitarServico
+
+  SolicitarServico --> Pagamento
   Pagamento --> Credito
   Pagamento --> Debito
   Pagamento --> Dinheiro
   Pagamento --> Pix
+
   Pix --> Negado
   Debito --> Negado
   Credito --> Negado
   Dinheiro --> Negado
+
   Pix --> Aprovado
   Dinheiro --> Aprovado
   Credito --> Aprovado
   Debito --> Aprovado
-  Negado --> SolicitarServiço
+
+  Negado --> SolicitarServico
+
   Aprovado --> EsperandoMotorista
   EsperandoMotorista --> ClienteEmEspera
-  IniciarServiço --> ClienteEmEspera
+  IniciarServico --> ClienteEmEspera
+
   ClienteEmEspera --> CorridaEmAndamento
   CorridaEmAndamento --> FinalizarCorrida
   FinalizarCorrida --> Usuario
-  Usuario --> AvaliaoDaCorrida
+  Usuario --> AvaliacaoDaCorrida
